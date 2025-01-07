@@ -1,24 +1,28 @@
-alert('Bem-vindo ao nosso site!');
-
-let nome = "Lua";
-
-let idade = 25;
-
-let numeroDeVendas = 50;
-
-let saldoDisponivel = 1000;
-
-alert('Erro! Preencha todos os campos');
-
-let mensagemDeErro = 'Erro! Preencha todos os campos';
-alert(mensagemDeErro);
-
-nome = prompt('Digite o seu nome');
-
-idade = prompt('Digite a sua idade');
-
-
-idade = prompt('Digite a sua idade');
-if (idade >= 18) {
-    alert('Pode tirar a habilitação!'); 
+diaDaSemana = prompt('Qual é o dia da semana?');
+if (diaDaSemana == 'Sábado') {
+    alert('Bom fim de semana!');
+} else if (diaDaSemana == 'Domingo') {
+    alert('Bom fim de semana!');
+} else {
+    alert('Boa semana!');
 }
+
+numero = prompt('Digite um positivo ou negativo');
+if (numero > 0) {
+    alert('Número positivo!');
+} else {
+    alert('Número negativo!');
+}
+
+pontuacao = 105;
+if (pontuacao >= 100) {
+    console.log('Parabéns, você venceu!');
+} else {
+    console.log('Tente novamente para ganhar.');
+}
+
+let saldoConta = 100; // Exemplo de saldo
+alert(`Seu saldo é de R$${saldoConta}.`);
+
+let nome = prompt('Qual o seu nome?');
+alert(`Boas vindas ${nome}`);
