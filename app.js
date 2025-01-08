@@ -1,28 +1,63 @@
-diaDaSemana = prompt('Qual é o dia da semana?');
-if (diaDaSemana == 'Sábado') {
-    alert('Bom fim de semana!');
-} else if (diaDaSemana == 'Domingo') {
-    alert('Bom fim de semana!');
+console.log('Boas vindas');
+
+let nome = 'Bruna Campos';
+console.log(`OLá, ${nome}!`);
+
+nome = 'Bruna Campos';
+alert(`Olá, ${nome}!`);
+
+let linguagemPreferida = prompt('Qual a linguagem de programação que você mais gosta?');
+console.log(linguagemPreferida);
+
+let valor1 = 42;
+let valor2 = 8;
+let resultado = valor1 + valor2;
+
+console.log(`A soma de ${valor1} e ${valor2} é igual a ${resultado}.`);
+
+valor1 = 10;
+valor2 = 8;
+resultado = valor1 - valor2;
+
+console.log(`A diferença entre ${valor1} e ${valor2} é igual a ${resultado}.`);
+
+let idade = prompt('Digite a sua idade:');
+if (idade > 17) {
+    console.log('Você é maior de idade.');
 } else {
-    alert('Boa semana!');
+    console.log('Você é menor de idade.');
 }
 
-numero = prompt('Digite um positivo ou negativo');
+let numero = parseFloat(prompt("Digite um número:"));
+
+
 if (numero > 0) {
-    alert('Número positivo!');
+    console.log("O número é positivo.");
+} else if (numero < 0) {
+    console.log("O número é negativo.");
 } else {
-    alert('Número negativo!');
+    console.log("O número é zero.");
 }
 
-pontuacao = 105;
-if (pontuacao >= 100) {
-    console.log('Parabéns, você venceu!');
-} else {
-    console.log('Tente novamente para ganhar.');
+numero = 1;
+while (numero <= 10) {
+    console.log(numero);
+    numero++;
 }
 
-let saldoConta = 100; // Exemplo de saldo
-alert(`Seu saldo é de R$${saldoConta}.`);
+let nota = 8; 
 
-let nome = prompt('Qual o seu nome?');
-alert(`Boas vindas ${nome}`);
+if (nota >= 7) {
+    console.log("Aprovado");
+} else {
+    console.log("Reprovado");
+}
+
+let numeroAleatorio = Math.random();
+console.log(numeroAleatorio);
+
+numeroInteiroAleatorio = parseInt(Math.random() * 10) + 1;
+console.log(numeroInteiroAleatorio);
+
+numeroInteiroAleatorio = parseInt(Math.random() * 1000) + 1;
+console.log(numeroInteiroAleatorio);
